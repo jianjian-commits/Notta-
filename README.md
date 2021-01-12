@@ -1,3 +1,12 @@
+## 说明
+```bash
+1 路由在router下
+2 loading组件
+3 redux
+4 路由懒加载
+5 适配用的是 flexible 以及 postcss-pxtorem 
+6 npm run eject 暴露webpack 在webpack.config.js下修改适配配置
+```
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
