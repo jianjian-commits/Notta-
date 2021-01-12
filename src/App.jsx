@@ -1,16 +1,19 @@
-import React from 'react';
-import SingImage from './component/SingImage'
-import Tab from './component/Tab'
+import React, { Suspense } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { renderRoutes } from "react-router-config";
 
-import "antd/dist/antd.css"
-import "./style/app.scss"
+import router from "./router";
 
 const App = () => {
+  
   return (
-    <div className="app">
-      <SingImage></SingImage>
-      <Tab></Tab>
-    </div>
+    <React.Fragment>
+      <Router>
+        <Suspense fallback="">
+          { renderRoutes(router)}
+        </Suspense>
+      </Router>
+    </React.Fragment>
   );
 }
 
