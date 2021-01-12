@@ -2,6 +2,7 @@
 ```bash
 1 路由在router下
 2 loading组件
+3 scroll滚动组件 只能通过 按下滑动 不能鼠标滚动 为了好看
 3 redux
 4 路由懒加载
 5 适配用的是 flexible 以及 postcss-pxtorem 
